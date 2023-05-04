@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Nabla&family=Poppins:wght@200;300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+#App {
+  min-height: 100vh;
+  max-height: auto;
+  background: #071A52;
+}
+#App .todo-element-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #086972;
+}
+#Header .title-container {
+  font-size: 2em;
+}
+#Header .title-container h1 {
+  color: #17B978;
+}
+
+#AddTodo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#AddTodo .container {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+#AddTodo .container .input-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#AddTodo .container .input-container input {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px;
+  padding: 5px;
+  font-size: 21px;
+  background: #17B978;
+  color: #071A52;
+  border: none;
+}
+#AddTodo .container .button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+}
+#AddTodo .container .button-container button {
+  height: 50px;
+  width: 125px;
+  border-radius: 15px;
+  border: none;
+  font-size: 21px;
+  background: #17B978;
+  color: #071A52;
+}
+
+#TodoElement {
+  width: 60%;
+  min-height: 100px;
+  max-height: 400px;
+  background: #17B978;
+  color: #071A52;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  border-radius: 15px;
+}
+#TodoElement .left {
+  display: grid;
+  grid-template-rows: 70% 30%;
+}
+#TodoElement .left .details-container {
+  padding-left: 20px;
+}
+#TodoElement .left .details-container input {
+  background: red;
+  min-width: 300px;
+  max-height: auto;
+  font-size: 21px;
+  padding: 7.5px;
+  color: white;
+  background: #071A52;
+  border: none;
+  border-radius: 15px;
+}
+#TodoElement .left .created-at-container {
+  padding-left: 20px;
+}
+#TodoElement .right .button-container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+}
+#TodoElement .right .button-container button {
+  width: auto;
+  height: auto;
+  font-size: 1.82em;
+  padding: 10px;
+  border: none;
+  background: inherit;
+}/*# sourceMappingURL=styles.css.map */

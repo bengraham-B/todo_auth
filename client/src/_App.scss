@@ -1,0 +1,11 @@
+#App {
+    min-height: 100vh;
+    max-height: auto;
+    background: $background;
+
+    .todo-element-container {
+        width: 100%;
+        @include flex;
+        flex-direction: column;
+    }
+}

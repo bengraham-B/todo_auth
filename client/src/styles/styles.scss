@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Poppins:wght@200;300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+}
+
+//& Variables
+$background: #071A52;
+$color: #17B978;
+
+
+//& Mixins
+@mixin flex(){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+//& Importing Style Sheets
+@import "../App";
+@import "../components/Header/Header";
+@import "../components/AddTodo/AddTodo";
+@import "../components/TodoElement/TodoElement";

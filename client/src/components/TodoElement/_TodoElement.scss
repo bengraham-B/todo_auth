@@ -1,0 +1,54 @@
+#TodoElement {
+    width: 60%;
+    min-height: 100px;
+    max-height: 400px;
+    background: $color;
+    color: $background;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    border-radius: 15px;
+
+    .left {
+        display: grid;
+        grid-template-rows: 70% 30%;
+
+        .details-container {
+            padding-left: 20px;
+
+            input{
+                background: red;
+                min-width: 300px;
+                max-height: auto;
+                font-size: 21px;
+                padding: 7.5px;
+                color: white;
+                background: $background;
+                border: none;
+                border-radius: 15px;
+            }
+        }
+
+        .created-at-container {
+            padding-left: 20px;
+        }
+    }
+
+    .right {
+
+        .button-container {
+            height: 100%;
+            @include flex;
+            justify-content: space-around;
+
+            button {
+                width: auto;
+                height: auto;
+                font-size: 1.82em;
+                padding: 10px;
+                border: none;
+                background: inherit;
+            }
+        }
+    }
+}
