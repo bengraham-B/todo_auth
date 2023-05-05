@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+import { useSelector } from 'react-redux'
 
 //& Importing SASS style sheets
 import "./styles/styles.css"
@@ -17,7 +17,7 @@ export default function App() {
 
 	const [response, setResponse] = useState()
 
-	const dispatch = useDispatch()
+	// const dispatch = useDispatch()
 
 	//^ Fetching todos from the API
 	useEffect(() => {
