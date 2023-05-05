@@ -2,7 +2,7 @@ require("dotenv").config()
 const express = require('express')
 const mongoose = require("mongoose")
 
-const dateString = require('./date.js') //^ file i made which shows date and time, easier to keep track of requsts to the server being mage
+const dateString = require('goose-funcs-2') //^ file i made which shows date and time, easier to keep track of requsts to the server being mage
 
 const app = express()
 
